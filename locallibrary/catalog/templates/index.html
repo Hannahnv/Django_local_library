@@ -1,12 +1,17 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-  <h1>Local Library Home</h1>
-  <p>
-    Welcome to LocalLibrary, a website developed by
-    <em>Hang Nguyen</em>!
+  
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivXEXgJUr-WtHnzv75zCxrpUWsTNrmZJcN0MpZ986uqS3wZlPPJZYFmsjEYA6xAoiI9bhW1CphNgBby4tVBvBP-c7B3F8pGaDfwb7s8XiARWfMXBISr0frxhAvCl1edABPxGxs-nhT8oDU/s1600/banner-libros.jpg" alt="Library Banner" style="width: 100%; height: auto;">
+</div>
+
+  <h1 style="color: #2c3e50; text-align: center;">Local Library Home</h1>
+  <p style="text-align: center; font-size: 18px;">
+    Welcome to Local Library, a website developed by
+    <strong>Hang Nguyen</strong>!
   </p>
-  <h2>Dynamic content</h2>
+  <h2>Dynamic Content</h2>
   <p>The library has the following record counts:</p>
   <ul>
     <li><strong>Books:</strong> {{ num_books }}</li>
