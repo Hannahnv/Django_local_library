@@ -180,4 +180,22 @@ class BookDelete(PermissionRequiredMixin, DeleteView):
             return HttpResponseRedirect(self.success_url)
         except Exception as e:
             return HttpResponseRedirect(reverse("book-delete", kwargs={"pk": self.object.pk}))
-        
+
+
+class BookInstanceCreate(PermissionRequiredMixin, CreateView):
+    model = BookInstance
+    fields = ['book', 'imprint', 'due_back', 'borrower', 'status']
+    permission_required = 'catalog.add_bookinstance'
+
+
+class BookInstanceUpdate(PermissionRequiredMixin, UpdateView):
+    model = BookInstance
+    # fields = "__all__"
+    fields = ['imprint', 'due_back', 'borrower', 'status']
+    permission_required = 'catalog.change_bookinstance'
+
+
+class BookInstanceDelete(PermissionRequiredMixin, DeleteView):
+    model = BookInstance
+    success_url = reverse_lazy('bookinstances')
+    permission_required = 'catalog.delete_bookinstance'
