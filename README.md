@@ -23,4 +23,4 @@ I would like to thank MDN for their comprehensive and clear documentation, which
 ## Deploying Django To Production
 [![Deploy on Railway](https://railway.app/button.svg)](https://web-production-8e5c2.up.railway.app/catalog/)
 
-![image](https://github.com/Hannahnv/Django_local_library/assets/102349995/275ebde6-b4bd-4921-8316-2ec230da3468)
+<img width="934" alt="image" src="https://github.com/Hannahnv/Django_local_library/assets/102349995/43fd32e2-b164-4d8d-90af-20599baf113d">
